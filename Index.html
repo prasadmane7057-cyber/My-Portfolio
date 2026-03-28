@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+
+/* ===== GENERAL ===== */
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f8;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+section{
+    padding:60px 10%;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    background:pink;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:red;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(to right,#0d6efd,#00c6ff);
+    color:blue;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero button{
+    padding:12px 25px;
+    border:none;
+    background:white;
+    color:violet;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+/* ===== ABOUT ===== */
+.about{
+    background:white;
+}
+
+.about p{
+    line-height:1.7;
+}
+
+/* EDUCATION */
+.education-card{
+    background:white;
+    padding:20px;
+    margin:10px;
+    border-radius:8px;
+    width:300px;
+    border-left:4px solid #00d4ff;
+    transition:0.3s;
+}
+
+
+/* ===== SKILLS ===== */
+.skills{
+    background:#eef3f793;
+}
+
+.skill-box{
+    display:inline-block;
+    background:hwb(216 5% 1% / 0.795);
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+    border-radius:5px;
+}
+/* ===== CERTIFICATES ===== */
+.certificates{
+    background:#eef3f7;
+}
+
+/* ===== PROJECTS ===== */
+.projects{
+    background:white;
+}
+
+.project-card{
+    background:#f4f6f8;
+    padding:20px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+/* ===== CONTACT ===== */
+.contact{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+}
+
+.contact input, .contact textarea{
+    width:80%;
+    padding:10px;
+    margin:10px;
+    border:none;
+    border-radius:5px;
+}
+
+.contact button{
+    padding:10px 25px;
+    border:none;
+    background:white;
+    color:#0d6efd;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#Education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div>
+        <img src="Prasad.html.jpeg" alt="Profile Photo" class="profile-img"width="200">
+        <h1>I am Mr.Prasad Mane</h1>
+        <h2>Engineering Student</h2>
+        <button onclick="scrollToProjects()">View My Work</button>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an engineering student passionate about programming, AI and web development.
+        Eager to learn,grow and contribute positively to take organisation while buildig a strong 
+        foundation for my career.
+    </p>
+</section>
+
+<section id="education">
+    <h1>Education</h1>
+    <div class="education-card">
+        <h3>CSE(Software Engineering)</h3>
+        <p>MIT Academy of Engineering, Pune (2025–2029)</p>
+    </div>
+    <div class="education-card">
+                <div class="year">2023 - 2025</div>
+                <h3>Mukteshwar junior College</h3>
+                <p>Latur</p>
+            </div>
+
+            <div class="education-card">
+                <div class="year">2022 - 2023</div>
+                <h3>Yashwantrao chavan vidyalay</h3>
+                <p>Gadhwad,Latur</p>
+            </div>
+</section>
+
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">JavaScript</div>
+    <div class="skill-box">Python</div>
+    <div class="skill-box">Java</div>
+    <div class="skill-box">C</div>
+
+<!-- CERTIFICATES -->
+<section class="certificates" id="certificates">
+    <h2>Certificates</h2>
+
+    <div class="project-card">
+        <h3>International youth math challenge participation certificate</h3>
+        <p>Completed from XYZ Institute</p>
+        <a href="IYMC Certificate.pdf">Certifcate 1</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Intoduction to modern AI completion Certificate</h3>
+        <p>completed from Cisco networking academy</p>
+        <a href="IntrotoModernAI.html.pdf">Certificate 2</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Certifiction of compleion 2 days C programming bootcamp</h3>
+        <p>completed from The knowledge networking club</p>
+        <a href="TKN.html.jpeg">Certificate 3</a>
+    </div>
+
+</section>
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Online Examination System Using Shell Script</h3>
+        <p>Build Using basic concepts of Linux.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive website using HTML CSS JS.</p>
+    </div>
+
+    <!---<div class="project-card">
+        <h3>Student Management System</h3>
+        <p>CRUD application using Java.</p>
+    </div>-->
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea placeholder="Message"></textarea><br>
+
+    <button onclick="sendMessage()">Send</button>
+
+</section>
+
+<footer>
+    © 2026 My Portfolio
+</footer>
+
+<script>
+
+function scrollToProjects(){
+    document.getElementById("projects").scrollIntoView();
+}
+
+function sendMessage(){
+    alert("Message Sent Successfully 🚀");
+}
+
+</script>
+
+</body>
+</html>
